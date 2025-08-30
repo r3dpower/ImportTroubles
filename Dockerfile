@@ -14,7 +14,7 @@ WORKDIR /app
 
 COPY index.js package.json /app/
 COPY public /app/public
-COPY uploads /app/uploads
+RUN mkdir -p /app/uploads
 COPY uptime_check.py /app/uptime_check.py
 COPY crontab /etc/cron.d/ctf-cron
 
@@ -27,3 +27,4 @@ RUN npm install
 EXPOSE 1337
 
 CMD service cron start && node index.js
+
