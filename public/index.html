@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chux Importer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📦 Resource Importer</h1>
+    <p>Provide the address of your desired resource (for example: internal NPM registry) and click Import!</p>
+    <p>The server runs a Python script to prepare your imported resource to the staging environment.</p>
+    <form method="POST" action="/import">
+      <label for="url">Resource URL:</label><br>
+      <input type="text" id="url" name="url" placeholder="http://example.com/file.txt" required><br><br>
+
+      <label for="filename">Save As:</label><br>
+      <input type="text" id="filename" name="filename" placeholder="file.txt" required><br><br>
+
+      <button type="submit">Import</button>
+    </form>
+  </div>
+</body>
+</html>

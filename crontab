@@ -1,0 +1,4 @@
+# Run every 20 seconds
+* * * * * /usr/bin/python3 /app/uptime_check.py
+* * * * * sleep 20; /usr/bin/python3 /app/uptime_check.py
+* * * * * sleep 40; /usr/bin/python3 /app/uptime_check.py
