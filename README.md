@@ -31,8 +31,8 @@ Chain misconfigurations into Remote Code Execution (RCE)
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/r3dpower/import-troubles.git
-   cd import-troubles
+   git clone https://github.com/r3dpower/ImportTroubles.git
+   cd ImportTroubles
 
 2. Build the Docker image:
 
